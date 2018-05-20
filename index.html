@@ -2,8 +2,7 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 	<link rel="stylesheet" type="text/css" href="Theme.css">
-	
-
+	<script type="text/javascript" src="js.js"></script>
 <head>
    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
    <meta charset="utf-8" />
@@ -12,24 +11,24 @@
     <title>Williamson Bray - Home</title>
 </head>
 <body>
-	<div >
-			
-		<h1>
-			<span>WILLIAMSON</span> BRAY
-		</h1>
-
+	
+	<h1>
+		<a onclick="toTop('Top'); return false;" href="#Top"><img src="Logo.png" width="10%" align="left"></a>
+		<span>WILLIAMSON</span> BRAY
+	</h1>
+	<br id="Top"><br><br><br>
 		<table>
 			<th>
-				<a href="#Web"><img src="background.png" class="zoom" width="100%" align="left"></a>
+				<a onclick="initScroll('Web'); return false;" href="#Web"><img src="background.png" class="zoom" width="100%" align="left"></a>
 				</th>
 				
-			<th><a href="#Computer"><img src="motherboard.png" class="zoom" width="100%" align="right"></a>
+			<th><a onclick="initScroll('Computer'); return false;" href="#Computer"><img src="motherboard.png" class="zoom" width="100%" align="right"></a>
 			</th>
 		</table>
-	
-		 <h2>About Us</h2>
+		<div>
+			 <h2>About Us</h2>
 		 
-		<p>testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest
+			<p>testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest
 				testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest
 				testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest
 				testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest
@@ -47,9 +46,11 @@
 				testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest
 				testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest
 				testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest
-		</p>
-		<h3 id="Web">Design your Website</h3>
-		<p>testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest
+			</p>
+		</div>
+		<div id="Web">
+			<h3>Design your Website</h3>
+			<p>testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest
 				testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest
 				testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest
 				testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest
@@ -67,9 +68,11 @@
 				testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest
 				testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest
 				testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest
-		</p>
-		<h3 id="Computer">Design your Computer</h3>
-		<p>testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest
+			</p>
+		</div>
+		<div id="Computer" >
+			<h3>Design your Computer</h3>
+			<p>testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest
 				testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest
 				testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest
 				testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest
@@ -99,7 +102,7 @@
 				testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest
 				testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest
 				testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest
-		</p>
-	</div>
+			</p>
+		</div>
 </body>
 </html>
