@@ -1,7 +1,8 @@
-﻿html{
+﻿html
+	{
 	font-family: Arial,sans-serif;
 	color: rgb(44,53,57);
-	background-color: #ecf0f1;
+	background-color: #ffffff;
 	font-size:1.4vw;
 	font-weight: bold;
 	text-align:center;	
@@ -9,42 +10,68 @@
 	}	
 h1
 	{
-	position:fixed;
 	text-align: right;
-	margin-top:-10px;
-	padding-right: 10px;
-	font-size:5vw;
-	font-family:Raleway, serif;
-	animation-duration: 1s;
-	animation-name: slidein;
-
-	background:#ecf0f1;
-	z-index: 2;
-	padding-top: 10;
-	vertical-align: middle;
+	font-size: 6vh;
 	}
-@keyframes slidein {
-		from {
-		  margin-left: 100%;
-			width: 100%; 
-			
-		}
-	  
-		to {
-		  margin-left: -1%;
-		  width: 100%;
-		}
-	  }
-	  
 h2, h3
 	{
 	text-align:center;
 	font-size: 3vw;
 	}
-span	
+
+p
 	{
-	color: rgb(153,0,0);
-	}	
+	padding:10px;
+	}
+a:link, a:visited, a:hover, a:active
+	{
+	text-decoration: none;
+	color: rgb(44,53,57);
+	}
+/*################################################################################################
+                                        	 Functions
+################################################################################################*/
+
+.enter	
+	{
+	box-shadow: 16px 8px 16px 0 rgba(0, 0, 0, 0.2), 24px 6px 20px 0 rgba(0, 0, 0, 0.19);
+	position:fixed;
+	width: 100%;
+	z-index: 2;
+	top:0;
+	height:100px;
+	padding-right: 50px;
+	padding-left:50px;
+	background: #ffffff;
+	font-family:Raleway, serif;
+	vertical-align: middle;
+	animation-duration: 1s;
+	animation-name: slideinRight;
+	}
+@keyframes slideinRight
+	{
+	from
+		{
+	  	margin-left: 100%;
+		width: 100%; 
+		}
+  
+	to 
+		{
+	  	margin-left: 0%;
+	  	width: 100%;
+		}
+  	}
+.shadow:hover
+	{
+	box-shadow: 0 15px 10px -15px rgb(153,0,0); 
+ 	}
+.body
+	{
+		height:100vh;
+		padding: 10px;
+		margin:0px;
+	}
 .zoom:hover
 	{
     position:relative;
@@ -55,13 +82,6 @@ span
 	 box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	 transition: all 0.1s ease;
 	}
-p
-{
-	padding:10px;
-}
-	div
-	{
-		height:100vh;
-		padding: 10px;
-	}
+
 	
+
