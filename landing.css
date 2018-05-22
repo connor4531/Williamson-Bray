@@ -41,23 +41,7 @@ body
   left: 0;
   }
 
-.content__container:hover > content_container:before
-  {
-  animation-duration: 1s;
-	animation-name: slideinRight;
-	}
-@keyframes slideinRight
-	{
-	from
-		{
-      left:0;
-		}
-  
-	to 
-		{
-      left:500;
-		}
-  	}
+
 .content__container:after
   {
   content: ']';

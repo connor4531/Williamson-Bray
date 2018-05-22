@@ -74,13 +74,16 @@ a:link, a:visited, a:hover, a:active
 	}
 .zoom:hover
 	{
+	
     position:relative;
     width:120%;
     height:auto;
     display:block;
     z-index:1;
 	 box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	 
 	 transition: all 0.1s ease;
+	 transition-delay:1s;
 	}
 
 	
