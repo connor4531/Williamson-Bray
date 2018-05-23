@@ -1,13 +1,21 @@
-﻿html
+﻿
+html
 	{
-	font-family: Arial,sans-serif;
-	color: rgb(44,53,57);
-	background-color: #ffffff;
+	font-family: Raleway,sans-serif;
 	font-size:1.4vw;
 	font-weight: bold;
 	text-align:center;	
 	text-decoration: none;
-	}	
+	width: 100%;
+	word-wrap: break-word;
+	}
+body
+	{
+	color: #ebeced;
+	background-color:#2c3539;
+	transition: all 0.15s ease-out;
+	}
+
 h1
 	{
 	text-align: right;
@@ -15,76 +23,125 @@ h1
 	}
 h2, h3
 	{
+	text-transform: uppercase;
 	text-align:center;
 	font-size: 3vw;
+	color: #990000;
 	}
 
-p
-	{
-	padding:10px;
-	}
 a:link, a:visited, a:hover, a:active
 	{
 	text-decoration: none;
-	color: rgb(44,53,57);
+	color: inherit;
 	}
 /*################################################################################################
                                         	 Functions
 ################################################################################################*/
 
-.enter	
+#enter	
 	{
 	box-shadow: 16px 8px 16px 0 rgba(0, 0, 0, 0.2), 24px 6px 20px 0 rgba(0, 0, 0, 0.19);
 	position:fixed;
-	width: 100%;
+	width: 101%;
 	z-index: 2;
 	top:0;
 	height:100px;
 	padding-right: 50px;
-	padding-left:50px;
-	background: #ffffff;
-	font-family:Raleway, serif;
+	align-items: right;
 	vertical-align: middle;
 	animation-duration: 1s;
 	animation-name: slideinRight;
+	background:#2c3539;
+	margin-left: -1%;
 	}
 @keyframes slideinRight
 	{
-	from
-		{
-	  	margin-left: 100%;
-		width: 100%; 
-		}
-  
-	to 
-		{
-	  	margin-left: 0%;
-	  	width: 100%;
-		}
+	from { margin-left: 100%; width: 101%; }
+  	to   { margin-left:  -1%; width: 101%; }
   	}
 .shadow:hover
 	{
 	box-shadow: 0 15px 10px -15px rgb(153,0,0); 
+	cursor: pointer;
  	}
 .body
 	{
 		height:100vh;
-		padding: 10px;
 		margin:0px;
+		padding: 1%;
 	}
 .zoom:hover
 	{
-	
-    position:relative;
+	position:relative;
     width:120%;
-    height:auto;
-    display:block;
     z-index:1;
-	 box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	 
-	 transition: all 0.1s ease;
-	 transition-delay:1s;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transition: all 0.1s ease;
+	}
+.text
+	{
+	margin:50px;	
 	}
 
-	
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
+.notTop {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+
+/*################################################################################################
+                                        	 Themes
+################################################################################################*/
+
+#changeTheme
+	{
+	font: inherit;
+	border: 0;
+	outline: 0;
+	background: inherit;
+	color: inherit;
+	font-size: 3vw;
+	}
+#changeTheme:hover
+	{
+	color: #990000;
+	}
+#Web, .dark #Web, #Computer, .dark #Computer, #Bio, .dark #Bio
+	{
+	
+	margin-left: -1%;
+	margin-right:-0.6%;
+	transition: all 0.15s ease-out;
+	}
+#Web, .dark #Computer, .dark #Bio, body.dark
+	{
+	background-color: #ebeced;
+	color:#2c3539;
+	}
+.dark #Web, #Computer, #Bio
+	{
+	background-color: #2c3539;
+	color: #ebeced;
+	}
+.dark #enter
+	{
+	background: #ebeced;
+	}

@@ -12,7 +12,7 @@ function initScroll(elementId){
 
     marginY = marginY + speed;
 
-    if(marginY >= destination - 60){
+    if(marginY >= destination - 100){
         clearTimeout(scroller);
     }
      window.scroll(0, marginY);
