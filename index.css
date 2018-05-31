@@ -1,0 +1,295 @@
+html
+    {
+    font-family: 'Raleway', sans-serif;
+    color: #2c3539;
+    background: #ebeced;
+    height:100%;
+    }
+h1
+    {
+    text-align: right;
+    font-size: 3vw;
+    }
+h2
+    {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.6vw;
+    }
+h3
+    {
+    text-align: center;
+    font-size:1vw;
+    }
+#bold
+    {
+    color: #990000;
+    }
+/* Landing Page #####################################################################################*/
+#top
+    {
+    background: #ebeced;
+    box-shadow: -16px 8px 16px 0 rgba(0, 0, 0, 0.2);
+    width:100%;
+    height:10vh;
+    z-index:2;
+    padding:0vh 3vh;
+    align-items: right;
+    }
+#quote
+    {
+    margin-left:-15vh;
+    }
+#main
+    {
+    height:80vh;
+    margin: -1%;
+    background-image:url("background.png");
+        
+    }
+#content
+    {
+    text-align: center;
+    margin-top: 20vh;
+    }
+#CTAbutton
+    {
+    margin-top:8vh;
+    border-radius: 5vh;
+    padding: 2vh;
+    border:6px solid #990000;
+    outline:0;
+    color: #ebeced;
+    background: none;
+    font-size:2vw;
+    cursor: pointer;
+    }
+
+#CTA
+    {
+    color: #990000;
+    -webkit-animation-name: opacity;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: opacity;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    }
+#CTAbutton:hover
+    {
+    -webkit-animation-name: hover;
+    -webkit-animation-duration:2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-name: hover;
+    animation-duration: 2s; 
+    animation-fill-mode: forwards;
+    }
+#break
+    {
+    z-index:1;
+    width:102%;
+    height:16vh;
+    position: relative;
+    background: #ebeced;
+    left:-1%;
+    box-shadow: -8px -8px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: -16px 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+#navbar
+    {
+    z-index: 4;
+    background:#ebeced;
+    width:100%;
+    padding:10px 20px;
+    left:0px;
+    position: fixed;
+    top:90vh;
+    height:10vh;
+    box-shadow: 8px -8px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+#navbar a
+    {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2vw;
+    margin-left:14vw;
+    margin-top: 2.5vh;
+    background:none;
+    outline: 0;
+    border:0;
+    cursor: pointer;
+    color:#2c3539;
+    }
+#navbar a:hover
+    {
+    color: #990000;
+    }
+/* Content ##########################################################################################*/
+#prices
+    {
+    color: #ebeced;
+    position:relative;
+    margin-top:-5%;
+    background: #8C9193;
+    height:81vh;
+    width:100vw;
+    margin-left:-1%;
+    }
+#prices .container
+    {
+    text-align: center;
+    color: #990000;
+    }
+#prices .card
+    {
+    margin-top:-2%;
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-animation-name: popDown;
+    -webkit-animation-duration:0.25s;
+    -webkit-animation-fill-mode: forwards;
+    animation-name: popDown;
+    animation-duration: 0.25s; 
+    animation-fill-mode: forwards;
+    }
+#prices .card:hover
+    {
+        -webkit-animation-name: popUp;
+        -webkit-animation-duration:0.25s;
+        -webkit-animation-fill-mode: forwards;
+        animation-name: popUp;
+        animation-duration: 0.25s; 
+        animation-fill-mode: forwards;
+    }
+#prices .container h1
+    {
+    text-align: center;
+    }
+#prices .container h2
+    {
+    font-size: 5vh;
+    padding: 0;
+    }
+#prices #smallprint
+    {
+    position: relative;
+    transform: translate(0px,10vh);
+    text-align:center;
+    vertical-align: text-bottom;
+    }
+#portfolio
+    {
+    position: relative;
+    z-index: 1;
+    height:100vh;
+    width:100%;
+    margin: -1%;
+    }
+#sectionHeader
+    {
+    height:5vh;
+    font-size: 2vw;
+    padding: 5vh 10vw 0vh 10vw;
+    }
+#text
+    {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    font-size: 1.2vw;
+    }
+.card
+    {
+    top:100px;
+    background: #ebeced;
+    border-radius: 25%;
+    align-self: center;
+    margin-left:1%;
+    padding: 0.25%;
+    display: inline-block;
+    position: relative;
+    width:100%; 
+    max-width: 14%; 
+    border-radius: 5px;
+    box-shadow: -16px 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+.card h3
+    {
+        font-size: 1vw;
+    }
+.strategy
+    {
+    margin-left:32%;
+    border-radius: 25px;
+    padding:5px 20px;
+    border:0;
+    outline:0;
+    cursor: pointer;
+    background: #2c3539;
+    color: #ebeced;
+    font-size: 1vw;
+    }
+.strategy:hover
+    {
+    background:#990000;
+    }
+/* Animations #######################################################################################*/
+@-webkit-keyframes opacity
+    {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1;}
+    }
+@-o-keyframes opacity
+    {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1;}
+    }
+@keyframes opacity
+    {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1;}
+    }
+@-webkit-keyframes hover
+    {
+    from {width:23vw;}
+    to {width: 50vw;}
+    }
+@-o-keyframes hover
+    {
+    from {width:23vw;}
+    to {width: 50vw;}
+    }   
+@keyframes hover
+    {
+    from {width:23vw;}
+    to {width: 50vw;}
+    }
+@-webkit-keyframes popUp
+    {
+    0% {    transform: translateY(0);}
+    to {    transform: translateY(-5vh);}
+    }
+ @-o-keyframes popUp
+    {
+    from {    transform: translateY(0);}
+    to {    transform: translateY(-5vh);}
+    }
+@keyframes popUp
+    {
+    from {    transform: translateY(0);}
+    to {    transform: translateY(-5vh);}
+    }
+    @-webkit-keyframes popDown
+    {
+    0% {    transform: translateY(-5vh);}
+    to {    transform: translateY(0);}
+    }
+ @-o-keyframes popDown
+    {
+    from {    transform: translateY(-5vh);}
+    to {    transform: translateY(-50)}
+    }
+@keyframes popDown
+    {
+    from {    transform: translateY(-5vh);}
+    to {    transform: translateY(-50)}
+    }
